@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="main-index">
-      <div class="slider">
+      <section class="slider">
         <div class="slider-item">
           <h1 class="hero-headline">Нежный пломбир с клубничным джемом</h1>
           <p class="hero-discription">Натуральное мороженое из свежих сливок
@@ -117,7 +117,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
       <section class="marketing-block">
         <h2 class="information-headline">Заказывайте мороженое и получайте подарки!</h2>
         <div class="marketing-card">
@@ -212,7 +212,8 @@
           </li>
         </ul>
       </section>
-      <section clsass="subscription-block">
+      <section class="subscription-block">
+        <h1 class="visually-hidden">Форма подписки</h1>
         <div class="card-info">
           <p class="subscription-discription">Новое в нашем блоге</p>
           <h3 class="subscription-headline">10 способов сервировки фруктовых щербетов
@@ -232,16 +233,15 @@
         </div>
       </section>
       <section class="delivery">
+        <h1 class="visually-hidden">Блок с формой и информацией о доставке</h1>
         <img class="img-delivery" src="./images/deliveryimg.png" width="1170" height="534" alt="Коллаж мороженного">
         <p class="delivery-headline">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <div class="appointment">
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="appointment-form-date"></p>
-            <label class="form-label" for="appointment-date">Дата</label>
-            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+            <p class="appointment-form-date">
+              <label class="form-label" for="appointment-date">Дата</label>
+              <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
             </p>
-          </form>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-phone">
               <label for="appointment-phone">Телефон</label>
               <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
@@ -255,18 +255,16 @@
           </form>
         </div>
       </section>
-      <section class="feedback-form">
+      <div class="feedback-form">
         <img class="img-feedback" src="./images/icecreamphoto.png" width="1170" height="492"
           alt="Фотография мороженного">
-        <div class="contacts">
-          <p class="contacts-discription">Адрес главного офиса и офлайн-магазина:</p>
-          <h4 class="contacts-headline">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
-          <p class="contacts-discription">Для заказов по телефону:</p>
-          <a class="contacts-phone" href="+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-          <span class="caption">(с 10 до 20 ежедневно)</span>
-        </div>
+        <p class="contacts-discription">Адрес главного офиса и офлайн-магазина:</p>
+        <address class="contacts-adress">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
+        <p class="contacts-discription">Для заказов по телефону:</p>
+        <a class="contacts-phone" href="+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <span class="caption">(с 10 до 20 ежедневно)</span>
         <button class="button" type="submit">Форма обратной связи</button>
-      </section>
+      </div>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
@@ -288,28 +286,19 @@
       </ul>
       <ul class="footer-navigation-list">
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">
-            <span class="visually-hidden">Для поставщиков</span>
-          </a>
+          <a class="footer-navigation-link" href="#">Для поставщиков</a>
         </li>
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">
-            <span class="visually-hidden">Наши документы</span>
-          </a>
+          <a class="footer-navigation-link" href="#">Наши документы</a>
         </li>
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">
-            <span class="visually-hidden">О производстве</span>
-          </a>
+          <a class="footer-navigation-link" href="#">О производстве</a>
         </li>
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">
-            <span class="visually-hidden">Экологические стандарты</span>
-          </a>
+          <a class="footer-navigation-link" href="#">Экологические стандарты</a>
         </li>
       </ul>
-      <img class="footer-logo" src="./images/logo_htmlacademy.png" width="93" height="27" alt="Логотип академии"
-        href="">
+      <a class="footer-logo" href="https://htmlacademy.ru/">Логотип академии</a>
       <a class="html-link" href="https://htmlacademy.ru/">Сделано в .html academy © 2021</a>
     </footer>
   </body>
